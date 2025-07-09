@@ -1,0 +1,13 @@
+﻿{
+  "Name": "1명",
+  "Type": "Element",
+  "Id": "4StzmBoxk0mfo63SAv-iwA",
+  "Reference": "U3J6a_XJXkmObOj5qn-m1g/4StzmBoxk0mfo63SAv-iwA",
+  "ParentRef": "U3J6a_XJXkmObOj5qn-m1g/BATRsuUz-Em7IW9277-veg",
+  "Created": "2025-07-08T00:37:44.9760878Z",
+  "Updated": "2025-07-08T00:37:44.9760878Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

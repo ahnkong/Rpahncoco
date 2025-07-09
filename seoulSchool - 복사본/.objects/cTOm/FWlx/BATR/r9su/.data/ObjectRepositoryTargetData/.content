@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="lp8t27ypy0iIIT3V_wQLvQ" Reference="U3J6a_XJXkmObOj5qn-m1g/r9suVuxuCkSGFBMF-Dy2fw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://work.sen.go.kr/work/search/recInfo/BD_selectSrchRecInfo.do?q_srchType=jobNm&amp;q_srchText=%EC%B2%B4%EC%9C%A1&amp;q_currPage=2&amp;q_rowPerPage=15&amp;q_srchArea=&amp;q_srchSchl=&amp;q_tabId=&amp;q_sortBy=regDt&amp;q_mySrchArea=&amp;q_srchJob=&amp;q_recClosed=closed&amp;q_today=&amp;q_jobCategory=&amp;" ContentHash="-ciT-G33y06QYVxO9eL9EQ" DesignTimeRectangle="260, -1002, 1399, 2130" DesignTimeScaleFactor="1.25" ElementType="List" FullSelectorArgument="&lt;webctrl parentid='srchDataDiv' tag='UL' /&gt;" Guid="2e5c1040-3c37-4611-be3a-40e86e473d85" Reference="U3J6a_XJXkmObOj5qn-m1g/r9suVuxuCkSGFBMF-Dy2fw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털 &amp;gt; 채용공고' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b925d60cd8e06ea4df8ae6eea90c4fa8.png" xmlns="">0Dto1O4O0-EunFUgf18pFOw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ExtractData</x:String>
+    <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='학교목록'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+&lt;/Table&gt;</p:InArgument>
+    <x:Null x:Key="NextLinkTarget" />
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

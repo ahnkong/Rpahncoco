@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Gm-f9AM8iU-7acI_FGxqjw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://work.sen.go.kr/work/search/recInfo/BD_selectSrchRecInfo.do?q_srchType=jobNm&amp;q_srchText=%EC%B2%B4%EC%9C%A1&amp;q_currPage=1&amp;q_rowPerPage=15&amp;q_srchArea=&amp;q_srchSchl=&amp;q_tabId=&amp;q_sortBy=regDt&amp;q_mySrchArea=&amp;q_srchJob=&amp;q_recClosed=closed&amp;q_today=&amp;q_jobCategory=" DesignTimeRectangle="251, 311, 1399, 2637" DesignTimeScaleFactor="1.25" ElementType="List" FullSelectorArgument="&lt;webctrl parentid='srchDataDiv' tag='UL' /&gt;" Guid="f2cdefb0-ccba-4267-b973-2e2486b06c2b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털 &amp;gt; 채용공고' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a41d86c873937b1a0d175b997583edb2.png" xmlns="">0WzYf1s77AkGeNa-9mKW3MQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ForEachUiElement</x:String>
+    <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+&lt;/Table&gt;</p:InArgument>
+    <x:Null x:Key="NextLinkTarget" />
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

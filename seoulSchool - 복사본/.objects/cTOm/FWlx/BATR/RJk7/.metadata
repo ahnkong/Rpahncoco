@@ -1,0 +1,14 @@
+﻿{
+  "Name": "창일중학교(1)",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "RJk7ry_Mik6ezT1ovL-dnw",
+  "Reference": "U3J6a_XJXkmObOj5qn-m1g/RJk7ry_Mik6ezT1ovL-dnw",
+  "ParentRef": "U3J6a_XJXkmObOj5qn-m1g/BATRsuUz-Em7IW9277-veg",
+  "Created": "2025-07-08T01:41:23.3316202Z",
+  "Updated": "2025-07-08T01:41:23.3316202Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

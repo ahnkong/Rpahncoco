@@ -1,0 +1,14 @@
+﻿{
+  "Name": "서울특별시남부교육지원청 02-2165-21…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "wjtQ9KN0X0KMFr9SDhc3Fw",
+  "Reference": "U3J6a_XJXkmObOj5qn-m1g/wjtQ9KN0X0KMFr9SDhc3Fw",
+  "ParentRef": "U3J6a_XJXkmObOj5qn-m1g/BATRsuUz-Em7IW9277-veg",
+  "Created": "2025-07-07T04:49:26.2314718Z",
+  "Updated": "2025-07-07T04:49:26.2314718Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

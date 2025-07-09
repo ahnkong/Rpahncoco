@@ -1,0 +1,14 @@
+﻿{
+  "Name": "즉시지원 채용공고지원 기관명 지원서선택 선…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "xzVvLLyI5EWk4CJE3oQg0A",
+  "Reference": "U3J6a_XJXkmObOj5qn-m1g/xzVvLLyI5EWk4CJE3oQg0A",
+  "ParentRef": "U3J6a_XJXkmObOj5qn-m1g/BATRsuUz-Em7IW9277-veg",
+  "Created": "2025-07-07T05:08:53.8877756Z",
+  "Updated": "2025-07-07T05:08:53.8877756Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

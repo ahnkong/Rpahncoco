@@ -1,0 +1,853 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umae="clr-namespace:UiPath.MicrosoftOffice365.Activities.Excel;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
+      <x:String>UiPath.Python</x:String>
+      <x:String>UiPath.Python.Activities</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Windows.Business</x:String>
+      <x:String>Microsoft.Graph</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="853,1453" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="schoolListDT" />
+      <Variable x:TypeArguments="x:Boolean" Default="True" Name="hasNextPage" />
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="Index" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="currentPage" />
+      <Variable x:TypeArguments="x:String" Name="str_schoolListDT" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="resultDT" />
+      <Variable x:TypeArguments="x:String" Name="targetSchool" />
+      <Variable x:TypeArguments="x:String" Name="schoolName" />
+      <Variable x:TypeArguments="x:String" Name="workgrade" />
+      <Variable x:TypeArguments="x:String" Name="boardTitle" />
+      <Variable x:TypeArguments="x:String" Name="periodDate" />
+      <Variable x:TypeArguments="x:String" Name="hirePerson" />
+      <Variable x:TypeArguments="x:String" Name="btnText" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="getherDataDT" />
+      <Variable x:TypeArguments="x:String" Name="hirePeriod" />
+      <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="childrenElements" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="FindChildrenCnt" />
+      <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="findChildren" />
+      <Variable x:TypeArguments="x:String" Name="cleantargeter" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Sequence ::: 사이트 진입 | 검색" sap:VirtualizedContainerService.HintSize="604,57" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard CloseMode="Never" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1128,4254" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="36d89829-fd75-43f9-9434-33d892c52b99" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="1094,4013" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Sequence ::: 검색 " sap:VirtualizedContainerService.HintSize="1060,315" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DisplayName="Click '채용공고'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="36d89829-fd75-43f9-9434-33d892c52b99" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="work.sen.go.kr/work/index.do" CVScreenId="73daae4f-c4a6-4f70-a1fe-1454080e0d29" ContentHash="vOk7Yj847E2DdaPLD98X4w" DesignTimeRectangle="300, 382, 71, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='A' visibleinnertext='채용공고' idx='1' /&gt;" Guid="578ea685-165e-4f66-8d1e-4cac176a2386" InformativeScreenshot="21f3c366b110edb48d87f81a5c7a07d0.png" Reference="U3J6a_XJXkmObOj5qn-m1g/6vbsIO8--06h230IDaT-MA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NSelectItem DisplayName="Select Item '공고명'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="과목(담당업무)" ScopeIdentifier="36d89829-fd75-43f9-9434-33d892c52b99" Version="V4">
+                  <uix:NSelectItem.Items>
+                    <scg:List x:TypeArguments="x:String" Capacity="4">
+                      <x:String>공고명</x:String>
+                      <x:String>학교명</x:String>
+                      <x:String>자치구</x:String>
+                      <x:String>과목(담당업무)</x:String>
+                    </scg:List>
+                  </uix:NSelectItem.Items>
+                  <uix:NSelectItem.Target>
+                    <uix:TargetAnchorable BrowserURL="work.sen.go.kr/work/search/recInfo/BD_selectSrchRecInfo.do" CVScreenId="c40e72bc-a21d-4b6c-a166-cb067ce89611" ContentHash="AWhiADwKNEybfGnaBO1PLQ" DesignTimeRectangle="910, 835, 172, 35" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='q_srchType' tag='SELECT' /&gt;" Guid="06aba9f8-a50c-43f4-b147-3b350adabb66" ImageBase64="" InformativeScreenshot="7d0c2903bec20407024e53c3739d8a7c.png" Reference="U3J6a_XJXkmObOj5qn-m1g/c3AUdG1aFUCa4sqjGt93VQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털 &amp;gt; 채용공고' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                  </uix:NSelectItem.Target>
+                </uix:NSelectItem>
+                <uix:NSetText DisplayName="Set Text 'INPUT q_srchText'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="36d89829-fd75-43f9-9434-33d892c52b99" Text="체육" Version="V4">
+                  <uix:NSetText.Target>
+                    <uix:TargetAnchorable BrowserURL="work.sen.go.kr/work/search/recInfo/BD_selectSrchRecInfo.do" CVScreenId="c40e72bc-a21d-4b6c-a166-cb067ce89611" ContentHash="aXMYTEqwSU6qObFWOUsUoQ" DesignTimeRectangle="1094, 824, 360, 58" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='q_srchText' tag='INPUT' /&gt;" Guid="280cdfd1-0eda-4d4a-80d0-7f59f52fd301" InformativeScreenshot="a148c8e87d5e10d0805a031fec5a08ff.png" Reference="U3J6a_XJXkmObOj5qn-m1g/2xLaHmAhVkyVVejj97z21w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털 &amp;gt; 채용공고' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                  </uix:NSetText.Target>
+                </uix:NSetText>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '검색'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="36d89829-fd75-43f9-9434-33d892c52b99" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="work.sen.go.kr/work/search/recInfo/BD_selectSrchRecInfo.do" CVScreenId="829ed2f7-469c-4c07-9484-dbd5ad559971" ContentHash="9w9Sk1XVMEyt1m_uYntxlw" DesignTimeRectangle="1560, 827, 100, 41" ElementType="Button" FullSelectorArgument="&lt;webctrl class='btn' parentid='contents' tag='BUTTON' /&gt;" Guid="e3050155-55f2-4dca-9ddb-ee130e473778" InformativeScreenshot="fec3f510bc36ebbe273bff1281d35e4d.png" Reference="U3J6a_XJXkmObOj5qn-m1g/q8U4XV5JPUOHDmcxjq-kew" ScopeSelectorArgument="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털 &amp;gt; 채용공고' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+              </Sequence>
+              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="1060,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                <ui:MultipleAssign.AssignOperations>
+                  <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Int32">[currentPage]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:Boolean">[hasNextPage]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                  </scg:List>
+                </ui:MultipleAssign.AssignOperations>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:MultipleAssign>
+              <ui:BuildDataTable sap2010:Annotation.AnnotationText="학교이름, 글제목, 담당업무, 접수기간, 채용기간, 접수방법" DataTable="[getherDataDT]" DisplayName="Build Data Table :::  getherDataDT" sap:VirtualizedContainerService.HintSize="1060,136" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;학교이름&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;글제목&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;담당업무&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;채용인원&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;접수기간&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;채용기간&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;접수방법&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:BuildDataTable>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1060,57" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="468,166" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_9">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[Index]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                      </Assign.Value>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Assign>
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+              <Sequence DisplayName="Sequence ::: 데이터 스크래핑" sap:VirtualizedContainerService.HintSize="1060,3018" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[hasNextPage = true]" DisplayName="While" sap:VirtualizedContainerService.HintSize="1026,2926" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+                  <ui:InterruptibleWhile.Body>
+                    <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="1024,2802" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="990,115" sap2010:WorkflowViewState.IdRef="Assign_12">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[Index]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                        </Assign.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Assign>
+                      <ui:FindChildren Children="[findChildren]" DisplayName="Find Children 'DIV'" Filter="&lt;webctrl class='flex_cont' /&gt;" sap:VirtualizedContainerService.HintSize="990,139" sap2010:WorkflowViewState.IdRef="FindChildren_2" Scope="FIND_DESCENDANTS">
+                        <ui:FindChildren.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ea4c974c-a773-49f5-84be-c08d08900151" InformativeScreenshot="c745c87a9207c99c367809309360e518" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;article&amp;gt;div&amp;gt;div' tag='DIV' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:FindChildren.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:FindChildren>
+                      <Assign sap:VirtualizedContainerService.HintSize="990,115" sap2010:WorkflowViewState.IdRef="Assign_10">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[FindChildrenCnt]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[CInt(findChildren.Count())]</InArgument>
+                        </Assign.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Assign>
+                      <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[FindChildrenCnt &gt; 0]" DisplayName="While" sap:VirtualizedContainerService.HintSize="990,1233" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                        <ui:InterruptibleWhile.Body>
+                          <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="484,1102" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:String" Name="cleantargeter" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Sequence DisplayName="Sequence ::: 스크래핑" sap:VirtualizedContainerService.HintSize="450,1042" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="resum" />
+                                <Variable x:TypeArguments="x:String" Name="sendResume" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click '(창일중) 2025학년도 2학기 시간강사(…(2)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="36d89829-fd75-43f9-9434-33d892c52b99" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="work.sen.go.kr/work/search/recInfo/BD_selectSrchRecInfo.do" CVScreenId="88b37383-7c0e-4c82-b980-537163bdc8fd" ContentHash="bZPeycrWG0mc_QD5I3eIyQ" DesignTimeRectangle="328, 615, 437, 24" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl parentid='srchDataDiv' tag='A' idx='{0}' /&gt;&quot;, index)]" Guid="56d44482-e88c-4ba0-90c7-4801cca0c194" InformativeScreenshot="9292be2e0a4e7d8caa089724259e4ee3.png" Reference="U3J6a_XJXkmObOj5qn-m1g/VL-VnqQw9keaoyBU48vY2g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털 &amp;gt; 채용공고' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NClick>
+                              <uix:NGetText DisplayName="Get Text '창일중학교(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NGetText_20" ScopeIdentifier="36d89829-fd75-43f9-9434-33d892c52b99" TextString="[schoolName]" Version="V4">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="work.sen.go.kr/work/search/recInfo/BD_selectRecDetail.do" CVScreenId="aa756540-0109-4f8e-9da7-6af1f5d56e0a" ContentHash="cv2f_X2UE0qAM0dTlT4zUw" DesignTimeRectangle="367, 554, 1185, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='contents' tag='P' /&gt;" Guid="9f6dbfdf-623c-47b8-97bd-a3354414e189" ImageBase64="" InformativeScreenshot="977016e2cab3d95ef05061d5488c589d.png" Reference="U3J6a_XJXkmObOj5qn-m1g/RJk7ry_Mik6ezT1ovL-dnw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털 &amp;gt; 채용공고 &amp;gt; 상세보기' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NGetText.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NGetText>
+                              <Assign sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[schoolName]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[schoolName.Split("|"c)(0).Trim]</InArgument>
+                                </Assign.Value>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Assign>
+                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="[schoolName]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </WriteLine>
+                              <uix:NGetText DisplayName="Get Text '(창일중) 2025학년도 2학기 시간강사(…(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NGetText_16" ScopeIdentifier="36d89829-fd75-43f9-9434-33d892c52b99" TextString="[boardTitle]" Version="V4">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="work.sen.go.kr/work/search/recInfo/BD_selectRecDetail.do" CVScreenId="d88ed9d7-7c0e-4206-b7c7-b23493b60de6" ContentHash="msDV52kfpEeEyYIcUDDjVA" DesignTimeRectangle="367, 479, 1185, 45" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='contents' tag='H3' /&gt;" Guid="ee9e175c-e8fd-4b43-8092-484e94fa8fb6" ImageBase64="" InformativeScreenshot="f703a7bf0aa461bcfbaa63eb7cd195e0.png" Reference="U3J6a_XJXkmObOj5qn-m1g/2itxCX9CLkiQMOrJgtK-UA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털 &amp;gt; 채용공고 &amp;gt; 상세보기' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NGetText.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NGetText>
+                              <uix:NGetText DisplayName="Get Text '체육'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NGetText_21" ScopeIdentifier="36d89829-fd75-43f9-9434-33d892c52b99" TextString="[workgrade]" Version="V4">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="work.sen.go.kr/work/search/recInfo/BD_selectRecDetail.do" CVScreenId="2be041e3-2fd4-4d2e-806a-784cc6aaba69" ContentHash="TLv96lBLBkSlYmJGLc2QDA" DesignTimeRectangle="507, 786, 31, 21" FullSelectorArgument="&lt;webctrl class='job-read-area__item--row-desc' idx='2' parentid='contents' tag='DD' /&gt;" Guid="7ab774db-3995-497e-bf7c-9f0fae631f64" ImageBase64="" InformativeScreenshot="6541517b7e92405bfa20bb5d2ff45ffc.png" Reference="U3J6a_XJXkmObOj5qn-m1g/lslcnG80cE2Mgh5sl_gg1g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털 &amp;gt; 채용공고 &amp;gt; 상세보기' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NGetText.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NGetText>
+                              <uix:NGetText DisplayName="Get Text '1명'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NGetText_17" ScopeIdentifier="36d89829-fd75-43f9-9434-33d892c52b99" TextString="[hirePerson]" Version="V4">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="work.sen.go.kr/work/search/recInfo/BD_selectRecDetail.do" CVScreenId="d88ed9d7-7c0e-4206-b7c7-b23493b60de6" ContentHash="HH400VA3jkSaWSDio7MKqA" DesignTimeRectangle="507, 731, 25, 21" FullSelectorArgument="&lt;webctrl class='job-read-area__item--row-desc' parentid='contents' tag='DD' /&gt;" Guid="44530a4c-f8ed-4177-823c-c9582ff39cc7" ImageBase64="" InformativeScreenshot="ead9b166b4e6d01c19808aa7be9ab98c.png" Reference="U3J6a_XJXkmObOj5qn-m1g/4StzmBoxk0mfo63SAv-iwA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털 &amp;gt; 채용공고 &amp;gt; 상세보기' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NGetText.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NGetText>
+                              <uix:NGetText DisplayName="Get Text '2025.08.11~2026.02.04'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NGetText_18" ScopeIdentifier="36d89829-fd75-43f9-9434-33d892c52b99" TextString="[periodDate]" Version="V4">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="work.sen.go.kr/work/search/recInfo/BD_selectRecDetail.do" CVScreenId="d88ed9d7-7c0e-4206-b7c7-b23493b60de6" ContentHash="MDhuqvrQ-ESoBd5dZrSFjA" DesignTimeRectangle="507, 865, 195, 21" FullSelectorArgument="&lt;webctrl class='job-read-area__item--row-desc' idx='3' parentid='contents' tag='DD' /&gt;" Guid="c7ad6945-92ed-423b-a958-0a3fef2f020b" ImageBase64="" InformativeScreenshot="6900dbc9f59559b37215690ff68b7872.png" Reference="U3J6a_XJXkmObOj5qn-m1g/zQYwH5V88kGCxNgl0MYPTQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털 &amp;gt; 채용공고 &amp;gt; 상세보기' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NGetText.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NGetText>
+                              <uix:NGetText DisplayName="Get Text '2025.07.07~2025.07.10'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NGetText_19" ScopeIdentifier="36d89829-fd75-43f9-9434-33d892c52b99" TextString="[hirePeriod]" Version="V4">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="work.sen.go.kr/work/search/recInfo/BD_selectRecDetail.do" CVScreenId="d88ed9d7-7c0e-4206-b7c7-b23493b60de6" ContentHash="aIYbepkb_UWy16JC0CJ9Ew" DesignTimeRectangle="507, 920, 195, 21" FullSelectorArgument="&lt;webctrl class='job-read-area__item--row-desc' idx='4' parentid='contents' tag='DD' /&gt;" Guid="665c7ed4-a835-4a11-8812-ad78e8553f7b" ImageBase64="" InformativeScreenshot="d655cadab454091524529ede42c43463.png" Reference="U3J6a_XJXkmObOj5qn-m1g/fj_tfB-MokexEnjQa75dXQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털 &amp;gt; 채용공고 &amp;gt; 상세보기' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NGetText.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NGetText>
+                              <uix:NGetText DisplayName="Get Text 'email'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NGetText_22" ScopeIdentifier="36d89829-fd75-43f9-9434-33d892c52b99" TextString="[sendResume]" Version="V4">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="work.sen.go.kr/work/search/recInfo/BD_selectRecDetail.do" CVScreenId="2be041e3-2fd4-4d2e-806a-784cc6aaba69" ContentHash="AWIG_5OuRkSlEDtJag3nYw" DesignTimeRectangle="1084, 804, 282, 21" FullSelectorArgument="&lt;webctrl class='job-read-area__item--row-desc' idx='7' parentid='contents' tag='DD' /&gt;" Guid="342a2092-77dc-4fa0-bec8-d6b5cc26cf12" ImageBase64="" InformativeScreenshot="9b64517d9e1e5b14e1593bcfa663d5b2.png" Reference="U3J6a_XJXkmObOj5qn-m1g/suBhkSAQOkmcmGwoIfpbEA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털 &amp;gt; 채용공고 &amp;gt; 상세보기' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NGetText.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NGetText>
+                              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{schoolName, boardTitle, workgrade, hirePerson, periodDate, hirePeriod, sendResume}]" DataTable="[getherDataDT]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:AddDataRow>
+                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[String.Join(&quot;, &quot;, New String() {schoolName, boardTitle, workgrade, hirePerson, periodDate, hirePeriod})]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </WriteLine>
+                              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                                <ui:MultipleAssign.AssignOperations>
+                                  <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:Int32">[FindChildrenCnt]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:Int32">[FindChildrenCnt -1]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:Int32">[index]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:Int32">[index+1]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                  </scg:List>
+                                </ui:MultipleAssign.AssignOperations>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:MultipleAssign>
+                              <uix:NNavigateBrowser DisplayName="Navigate Browser - 뒤로 이동" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V4">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NNavigateBrowser>
+                            </Sequence>
+                          </Sequence>
+                        </ui:InterruptibleWhile.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:InterruptibleWhile>
+                      <uix:NCheckState DisplayName="Check App State '레이블'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="990,1140" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="36d89829-fd75-43f9-9434-33d892c52b99" Version="V4">
+                        <uix:NCheckState.IfExists>
+                          <Sequence DisplayName="타겟이 나타남" sap:VirtualizedContainerService.HintSize="468,858" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,123" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[&quot;이전 페이지는  : &quot;   +  currentPage.ToString]">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </WriteLine>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_6">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[cleantargeter]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[currentPage.ToString.Trim.Replace(Chr(9), "")]</InArgument>
+                              </Assign.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Assign>
+                            <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="잘 안잡힘.." ClickType="Single" DisplayName="Click '레이블(1)' ::: 다음페이지 클릭" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,221" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="36d89829-fd75-43f9-9434-33d892c52b99" Version="V4">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="work.sen.go.kr/work/search/recInfo/BD_selectSrchRecInfo.do" CVScreenId="a5bc3fc5-094f-4e7d-945e-7aa74a118369" ContentHash="OcR-b-dxiEGAJrzHyC82cw" DesignTimeRectangle="960, 680, 30, 30" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='A' onclick='opMovePage({0}); return false;' /&gt;&quot;, cleantargeter)]" Guid="2d53ad60-6aa7-4980-a2cb-9ccbdf247e3e" InformativeScreenshot="8b659eec6c026c39ec9e97d8b152368d.png" Reference="U3J6a_XJXkmObOj5qn-m1g/6cYj2-j410GdSgGoqYPOBQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털 &amp;gt; 채용공고' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                              </uix:NClick.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NClick>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_1">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[currentPage]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[currentPage+1]</InArgument>
+                              </Assign.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Assign>
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,118" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;커런트 페이지 추가됨!  지금 페이지는 :&quot;  +currentPage.ToString + &quot;입니당&quot;]">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:MessageBox>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_2">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Boolean">[hasNextPage]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                              </Assign.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Assign>
+                          </Sequence>
+                        </uix:NCheckState.IfExists>
+                        <uix:NCheckState.IfNotExists>
+                          <Sequence DisplayName="타겟이 나타나지 않음" sap:VirtualizedContainerService.HintSize="468,170" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_3">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Boolean">[hasNextPage]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                              </Assign.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Assign>
+                          </Sequence>
+                        </uix:NCheckState.IfNotExists>
+                        <uix:NCheckState.Target>
+                          <uix:TargetAnchorable BrowserURL="work.sen.go.kr/work/search/recInfo/BD_selectSrchRecInfo.do" CVScreenId="92acef92-2c97-4e2b-b1a1-ade17a72d66d" ContentHash="pfaZvdPvnkOSVBbBaqCIFg" DesignTimeRectangle="960, 680, 30, 30" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='LI' visibleinnertext='{0}' /&gt;&lt;webctrl tag='A' /&gt;&quot;, currentPage)]" Guid="e98c8198-9b8d-4c09-a127-433b2dcd56ee" InformativeScreenshot="c14009214425f021a33c86746a08ea06.png" Reference="U3J6a_XJXkmObOj5qn-m1g/vjpEkD5JL0iPaOE6cgfeog" ScopeSelectorArgument="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털 &amp;gt; 채용공고' idx='1' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                        </uix:NCheckState.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NCheckState>
+                    </Sequence>
+                  </ui:InterruptibleWhile.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:InterruptibleWhile>
+              </Sequence>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1060,57" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="무시된 액티비티" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                    <Assign sap:VirtualizedContainerService.HintSize="1024,116" sap2010:WorkflowViewState.IdRef="Assign_11">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="sd:DataTable">[resultDT]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="sd:DataTable" xml:space="preserve">[schoolListDT.AsEnumerable().
+    Where(Function(row) 
+        Not row("학교이름").ToString.Trim.Contains("초등학교") _
+        Or Not row("글제목").ToString.Trim.Contains("시간")
+    ).CopyToDataTable()]</InArgument>
+                      </Assign.Value>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Assign>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:FilterDataTable DataTable="[getherDataDT]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="1060,188" sap2010:WorkflowViewState.IdRef="FilterDataTable_3" OutputDataTable="[resultDT]" SelectColumnsMode="Remove">
+                <ui:FilterDataTable.Filters>
+                  <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                    <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                      <ui:FilterOperationArgument.Column>
+                        <InArgument x:TypeArguments="x:String">["학교이름"]</InArgument>
+                      </ui:FilterOperationArgument.Column>
+                      <ui:FilterOperationArgument.Operand>
+                        <InArgument x:TypeArguments="x:String">["초등"]</InArgument>
+                      </ui:FilterOperationArgument.Operand>
+                    </ui:FilterOperationArgument>
+                    <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                      <ui:FilterOperationArgument.Column>
+                        <InArgument x:TypeArguments="x:String">["글제목"]</InArgument>
+                      </ui:FilterOperationArgument.Column>
+                      <ui:FilterOperationArgument.Operand>
+                        <InArgument x:TypeArguments="x:String">["시간"]</InArgument>
+                      </ui:FilterOperationArgument.Operand>
+                    </ui:FilterOperationArgument>
+                  </scg:List>
+                </ui:FilterDataTable.Filters>
+                <ui:FilterDataTable.SelectColumns>
+                  <scg:List x:TypeArguments="InArgument" Capacity="4">
+                    <x:Null />
+                  </scg:List>
+                </ui:FilterDataTable.SelectColumns>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:FilterDataTable>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="EqaPmVnrUkaEXC7GZz0_hQ" IconBase64="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" InformativeScreenshot="489794ed58c9b6f25c1141c9de1f15ee.jpg" Reference="U3J6a_XJXkmObOj5qn-m1g/BATRsuUz-Em7IW9277-veg" Selector="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털' /&gt;" Url="https://work.sen.go.kr/work/index.do" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
+    <Sequence DisplayName="Sequence ::: 엑셀 스코프" sap:VirtualizedContainerService.HintSize="604,1259" sap2010:WorkflowViewState.IdRef="Sequence_19">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="570,1167" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+        <ueab:ExcelProcessScopeX.Body>
+          <ActivityAction x:TypeArguments="ui:IExcelProcess">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="536,1057" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="502,997" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\Users\USER\Desktop\ahnTeacher">
+                <ueab:ExcelApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="468,701" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ueab:ClearRangeX DisplayName="Clear Sheet/Range/Table" HasHeaders="False" sap:VirtualizedContainerService.HintSize="434,149" sap2010:WorkflowViewState.IdRef="ClearRangeX_1" TargetRange="[Excel.Sheet(&quot;Sheet1&quot;)]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ueab:ClearRangeX>
+                      <ueab:WriteRangeX Append="True" Destination="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="434,193" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[resultDT]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ueab:WriteRangeX>
+                      <umae:SetRangeColor ContinueOnError="{x:Null}" AuthScopesInvalid="False" Color="[System.Drawing.ColorTranslator.FromHtml(&quot;#87ceeb&quot;)]" DisplayName="Set Range Color" sap:VirtualizedContainerService.HintSize="434,299" sap2010:WorkflowViewState.IdRef="SetRangeColor_1" Range="A1:G1" SheetName="Sheet1" Workbook="[Nothing]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </umae:SetRangeColor>
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelApplicationCard.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ueab:ExcelApplicationCard>
+            </Sequence>
+          </ActivityAction>
+        </ueab:ExcelProcessScopeX.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ueab:ExcelProcessScopeX>
+    </Sequence>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="604,114" sap2010:WorkflowViewState.IdRef="WriteLine_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+  </Sequence>
+</Activity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="AWhiADwKNEybfGnaBO1PLQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="work.sen.go.kr/work/search/recInfo/BD_selectSrchRecInfo.do" CVScreenId="c40e72bc-a21d-4b6c-a166-cb067ce89611" DesignTimeRectangle="910, 835, 172, 35" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='q_srchType' tag='SELECT' /&gt;" Guid="06aba9f8-a50c-43f4-b147-3b350adabb66" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털 &amp;gt; 채용공고' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="7d0c2903bec20407024e53c3739d8a7c.png" xmlns="">0GAy7HBaRdkitmBM80BYmkg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

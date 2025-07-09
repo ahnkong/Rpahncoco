@@ -1,0 +1,14 @@
+﻿{
+  "Name": "1학년 체육",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "bn4gh5K3MUum1prUrI3Qig",
+  "Reference": "U3J6a_XJXkmObOj5qn-m1g/bn4gh5K3MUum1prUrI3Qig",
+  "ParentRef": "U3J6a_XJXkmObOj5qn-m1g/BATRsuUz-Em7IW9277-veg",
+  "Created": "2025-07-07T04:50:14.2811084Z",
+  "Updated": "2025-07-07T04:50:14.2811084Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

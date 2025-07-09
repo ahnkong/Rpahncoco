@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Button",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "C_Zqlo64EUOFCe5zd6Ph8Q",
+  "Reference": "U3J6a_XJXkmObOj5qn-m1g/C_Zqlo64EUOFCe5zd6Ph8Q",
+  "ParentRef": "U3J6a_XJXkmObOj5qn-m1g/BATRsuUz-Em7IW9277-veg",
+  "Created": "2025-07-07T02:24:41.3000759Z",
+  "Updated": "2025-07-07T02:24:41.3000759Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

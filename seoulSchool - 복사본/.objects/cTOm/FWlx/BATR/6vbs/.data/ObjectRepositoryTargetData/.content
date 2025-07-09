@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vOk7Yj847E2DdaPLD98X4w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="work.sen.go.kr/work/index.do" CVScreenId="73daae4f-c4a6-4f70-a1fe-1454080e0d29" DesignTimeRectangle="300, 382, 71, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='A' visibleinnertext='채용공고' idx='1' /&gt;" Guid="578ea685-165e-4f66-8d1e-4cac176a2386" ScopeSelectorArgument="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="21f3c366b110edb48d87f81a5c7a07d0.png" xmlns="">0CKZoqs2jEUaLVf9ckNRqoA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="bZPeycrWG0mc_QD5I3eIyQ" Reference="U3J6a_XJXkmObOj5qn-m1g/VL-VnqQw9keaoyBU48vY2g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="work.sen.go.kr/work/search/recInfo/BD_selectSrchRecInfo.do" CVScreenId="88b37383-7c0e-4c82-b980-537163bdc8fd" DesignTimeRectangle="328, 615, 437, 24" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl parentid='srchDataDiv' tag='A' idx='{0}' /&gt;&quot;, index)]" Guid="56d44482-e88c-4ba0-90c7-4801cca0c194" ScopeSelectorArgument="&lt;html app='chrome.exe' title='서울교육일자리포털 : 서울교육일자리포털 &amp;gt; 채용공고' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="9292be2e0a4e7d8caa089724259e4ee3.png" xmlns="">0mJ5ebXYQB0WWnuZMDimwJA</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsString="False" Name="Index">
+        <ObjectRepositoryVariableData.DefaultValue>
+          <x:Int32>1</x:Int32>
+        </ObjectRepositoryVariableData.DefaultValue>
+      </ObjectRepositoryVariableData>
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
